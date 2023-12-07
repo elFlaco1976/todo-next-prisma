@@ -1,5 +1,10 @@
 import Image from "next/image";
 
 export default function Home() {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <header className={"text-2xl"}>TODOS</header>
+      <ul></ul>
+    </>
+  );
 }
