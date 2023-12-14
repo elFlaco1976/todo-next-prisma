@@ -7,7 +7,7 @@ export default function Home() {
         <h1 className={"text-2xl"}>TODOS</h1>
         <Link
           className="border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-slate-700 outline-none"
-          href="/testpage"
+          href="/newtodo"
         >
           New page
         </Link>
