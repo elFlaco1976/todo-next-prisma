@@ -15,7 +15,11 @@ export default async function Home() {
           New page
         </Link>
       </header>
-      <ul></ul>
+      <ul>
+        {todos.map((todo) => (
+          <li key={todo.id}>{todo.title}</li>
+        ))}
+      </ul>
     </>
   );
 }
