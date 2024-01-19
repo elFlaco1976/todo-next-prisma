@@ -6,9 +6,11 @@ type TodoItemProps = {
 
 const TodoItem = ({ id, title, complete }: TodoItemProps) => {
   return (
-    <li>
-      <input type="checkbox" checked={complete} />
-      <p>{title}</p>
+    <li className="flex gap-1 items-center">
+      <input id={id} type="checkbox" checked={complete} className="cursor-pointer peer" />
+      <label htmlFor={id} className="peer-checked:line-through">
+        {title}
+      </label>
     </li>
   );
 };
